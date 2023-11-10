@@ -1,17 +1,9 @@
 /*Meeran Haq, Student Number: 8711306 */
 
-/*
-body {
-    font: small-caps, italic, bold;
-    background-color: hsla(150, 50%, 50%, 0.8);
-    height: 50vh;
-    width: 80vw;
-}
-*/
-
 main {
     float: left;
-    width: 23.5em;
+    width: 70vh;
+    height: auto;
     background-color: hsl(0, 63%, 82%);
 }
 
@@ -21,15 +13,16 @@ header {
 
 aside {
     float:right;
-    width: 20em;
-    height:17.3vh;
+    width: 30vw;
+    height: auto;
     background-color: hsl(120, 71%, 74%);
 }
 
 footer {
-    position: absolute;
-    top: 550px;
-    width: 51.5em;
+    position:absolute;
+    top: 120%;
+    width: 95.5vw;
+    padding: 20px;
     background-color: hsl(255, 56%, 78%);
 }
 
@@ -38,16 +31,43 @@ footer p {
     font-size: smaller;
 }
 
+h1 {
+    color: brown; font-size: 50px;
+}
+
 h2 {
     margin-left: 25px;
     color: #c35;
     font-size: width 50%, length 50%;
 }
 
+nav li {
+    display: inline;
+    list-style: none;
+}
+
+nav a {
+    border: 2px solid indigo;
+    font: indigo;
+    background-color: cornsilk;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+nav a:hover {
+    border: cornsilk;
+    font: cornsilk;
+    background-color: indigo;
+}
+
 .structural {
-    padding: 50px;
+    padding: 25px;
     border: 5px solid green;
-    margin: 10px;
+    margin: 5px;
 }
 
 #paragraphcolor1 {
@@ -60,4 +80,57 @@ h2 {
 
 a:hover {
     color: #a94;
+}
+
+form {
+    border: 5px dashed indigo;
+}
+
+input, text {
+    width: 50% ;
+    display: block;
+    height: 2em;
+    padding : 5px;
+    margin : 5px;
+}
+
+label, legend, select, option {
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-variant: small-caps;
+}
+
+textarea {
+    width : 50%;
+    display : block;
+    padding : 5px;
+    margin : 5px;
+}
+
+input[type="radio"], input[type=checkbox]{
+    display: inline;
+    height: 2em;    
+    width : 2em;
+    padding : 5px;
+    margin : 5px;
+}
+
+input[type="email"], input[type="submit"] {
+    width: 50% ;
+    display: block;
+    height: 2em;
+    padding: 5px;
+    margin: 5px;
+}
+
+fieldset {
+    border: none;
+    padding : 5px;
+    margin : 5px;
+}
+
+ol{
+    list-style-type: circle;
+    line-height: 80%;
+    color: rgb (5, 50, 255);
 }
