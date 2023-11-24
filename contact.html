@@ -7,9 +7,9 @@
 
     <!-- 
         Contact.html
-        In-class Task 4
-        Practising Forms
-        Meeran Haq, 2023.11.09: Created
+        In-class Task 5
+        Forms and Nav Menus
+        Meeran Haq, 2023.11.23: Created
         Mhaq1306@conestogac.on.ca 
     -->
 
@@ -20,15 +20,62 @@
 </head>
 
 <header class="structural">
-    <h1> Web Foundations In-Class Task 4 </h1>
+    <h1> Web Foundations In-Class Task 5 </h1>
 </header>
 
 <nav class="structural">
     <ul>
         <li> <a href="index.html"> Home </a> </li>
+        <li> <a href="gallery.html"> Gallery </a> </li>
         <li> <a href="contact.html"> Contact </a> </li>
     </ul>
 </nav>
+
+<main class="structural">
+    <h2> Contact </h2>
+ 
+     <form action="process-form" method="post">
+ 
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" autofocus required>
+         <br>
+         <label for="email">E-mail:</label>
+         <input type="email" id="email" name="email" required>
+         <br>
+         
+         <fieldset id="Section">
+             <legend>What section of PROG1245 are you in? </legend>
+             <label for="Section 4" required>Section 4</label>
+             <input type="radio" id="4" name="sec" value="4">
+            <br> <label for="Section 5">Section 5</label>
+             <input type="radio" id="5" name="sec" autofocus value="5" checked>
+            <br> <label for="Section 8">Section 8</label>
+             <input type="radio" id="8" name="sec" value="8">
+         </fieldset>
+ 
+         <label for="year">What do you need help with?</label>
+         <br>
+             <select id="year" name="year">
+                 <option value="HTML">HTML</option>
+                 <option value="CSS">CSS</option>
+                 <option value="Both (HTML & CSS)" selected>Both (HTML & CSS)</option>
+             </select>
+ 
+             <br>
+             <br>
+         <label for="comment">Comments</label>
+             <br>
+             <textarea id="comment" rows="4" name="comment"></textarea>
+             <br>
+ 
+         <input type="checkbox" value="true" id="human" name="human">
+         <label for="human">I am a human</label>
+             <br>
+ 
+         <input type="submit" id="submit" value="Submit">
+ 
+     </form> 
+ </main>
 
 <aside class="structural">
     <h2> Unordered List of Websites </h2>
@@ -37,53 +84,6 @@
         <li> <a href="https://developer.mozilla.org/en-US/">mozilla</a></li>
     </ul>
 </aside>
-
-<main class="structural">
-   <h2> Contact </h2>
-
-    <form action="process-form" method="post">
-
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <br>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <input type="submit" value="Subscribe">
-        
-        <fieldset id="Section">
-            <legend>What section of PROG1245 are you in? </legend>
-            <label for="Section 4" required>Section 4</label>
-            <input type="radio" id="4" name="sec" value="4">
-           <br> <label for="Section 5">Section 5</label>
-            <input type="radio" id="5" name="sec" autofocus value="5" checked>
-           <br> <label for="Section 8">Section 8</label>
-            <input type="radio" id="8" name="sec" value="8">
-        </fieldset>
-
-        <label for="year">What do you need help with?</label>
-        <br>
-            <select id="year" name="year">
-                <option value="HTML">HTML</option>
-                <option value="CSS">CSS</option>
-                <option value="Both (HTML & CSS)" selected>Both (HTML & CSS)</option>
-            </select>
-
-            <br>
-            <br>
-        <label for="comment">Comments</label>
-            <br>
-            <textarea id="comment" rows="4" name="comment"></textarea>
-            <br>
-
-        <label for="human">I am a human</label>
-            <input type="checkbox" value="true" id="human" name="human" checked>
-            <br>
-
-        <input type="submit" id="submit" value="Submit">
-
-    </form> 
-</main>
 
 <footer class="structural">
     <p> &copy; Meeran Haq, 2023 </p>
